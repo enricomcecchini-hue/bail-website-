@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-navy: #0B1120;
+  --color-navy-card: #0F1828;
+  --color-navy-border: #1A2540;
+  --color-bail-blue: #1A56FF;
+  --color-bail-blue-light: #3B6FFF;
+  --color-muted: #94A3B8;
+  --color-muted-light: #CBD5E1;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0B1120;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hover-card {
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-card:hover {
+  border-color: rgba(26, 86, 255, 0.45) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(26, 86, 255, 0.1);
+}
+
+.hover-lift {
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.hover-lift:hover {
+  border-color: rgba(26, 86, 255, 0.35) !important;
+  transform: translateY(-3px);
+}
+
+.btn-blue {
+  background-color: #1A56FF;
+  color: white;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  display: inline-block;
+}
+
+.btn-blue:hover {
+  background-color: #3B6FFF;
+}
+
+.btn-ghost {
+  border: 1.5px solid rgba(26, 86, 255, 0.35);
+  color: #CBD5E1;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+.btn-ghost:hover {
+  border-color: #1A56FF;
+  color: white;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #94A3B8;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link-active {
+  color: white;
+  border-bottom-color: #1A56FF;
+}
+
+.footer-link {
+  font-size: 0.85rem;
+  color: #64748B;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #94A3B8;
+}
+
+.social-icon {
+  color: #64748B;
+  transition: color 0.2s;
+}
+
+.social-icon:hover {
+  color: #94A3B8;
 }
