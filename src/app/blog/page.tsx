@@ -83,7 +83,7 @@ export default function Blog() {
               Content coming soon
             </h2>
             <p style={{ fontSize: "0.9rem", color: "#94A3B8", lineHeight: 1.7, maxWidth: 420, margin: "0 auto 2rem" }}>
-              BAIL launches in September 2025. Our first AI Tips of the Week, project reports, and member write-ups will appear here once sessions begin.
+              BAIL launches in September 2026. Our first AI Tips of the Week, project reports, and member write-ups will appear here once sessions begin.
             </p>
             <div
               style={{
@@ -108,7 +108,7 @@ export default function Blog() {
                   animation: "pulse 2s ease infinite",
                 }}
               />
-              First posts expected: September 2025
+              First posts expected: September 2026
             </div>
           </div>
 
