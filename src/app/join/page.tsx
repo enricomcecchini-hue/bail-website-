@@ -114,8 +114,7 @@ export default function Join() {
                 Opens September 2026
               </h2>
               <p style={{ fontSize: "0.9rem", color: "#94A3B8", lineHeight: 1.7, marginBottom: "2rem" }}>
-                Applications open at the start of the fall semester. In the meantime,
-                follow us to stay updated on our launch.
+                We launch in September. Before that, we need your support — vote for BAIL in June to help us become an official Bocconi association. Follow us on Instagram for updates.
               </p>
 
               <div
