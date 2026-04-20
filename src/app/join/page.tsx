@@ -40,7 +40,7 @@ export default function Join() {
 
       {/* Application status */}
       <section style={{ padding: "5rem 1.5rem" }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3rem", alignItems: "start" }}>
+        <div className="two-col-stack" style={{ maxWidth: 1100, margin: "0 auto" }}>
 
           {/* Left: Status card */}
           <div>
